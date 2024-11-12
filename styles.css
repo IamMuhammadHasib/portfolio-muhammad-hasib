@@ -1,0 +1,152 @@
+:root {
+  --purple10: #e9deff;
+  --purple35: rgba(162, 45, 247, 0.5);
+
+  --gradient-purple-1: linear-gradient(45deg, #8338ec, #b923ff);
+  /* --gradient-purple-2: linear-gradient(
+    90deg,
+    rgba(233, 222, 255, 0) 0%,
+    rgba(233, 222, 255, 0.3) 100%
+  ); */
+
+  --dark04: rgba(23, 0, 52, 0.4);
+  --dark10: #56514d;
+  --dark20: #1e0044;
+  --dark30: #0b001a;
+
+  --white10: #ffffff;
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url(./fonts/Montserrat-VariableFont_wght.ttf) format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: Montserrat;
+  src: url(./fonts/Montserrat-Italic-VariableFont_wght.ttf) format("truetype");
+  font-weight: 100 900;
+  font-style: italic;
+}
+
+body {
+  font-family: Montserrat;
+  font-weight: 400;
+  background-color: var(--dark30);
+  margin: 1.3rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.section {
+  border-radius: 20px;
+  padding: 2rem;
+}
+
+.home {
+  background-color: var(--dark20);
+  display: flex;
+  gap: 6rem;
+  flex-direction: column;
+  padding-top: 1rem;
+  color: var(--purple10);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.88rem;
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+
+.brand {
+  display: flex;
+  flex-direction: column;
+  font-family: Georgia;
+  font-style: italic;
+  font-size: 1.4rem;
+}
+
+.brand a {
+  color: var(--purple10);
+}
+
+.brand img{
+    margin-top: -3px;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.nav-link a {
+  color: var(--purple10);
+}
+
+.button {
+  background: var(--gradient-purple-1);
+  border-radius: 50px;
+  padding: 1px;
+  box-shadow: 0 0px 12px var(--purple35);
+}
+
+.button-content {
+  display: flex;
+  gap: 0.5rem;
+  background: var(--dark20);
+  padding: 0.5rem 0.8rem;
+  border-radius: 50px;
+}
+
+.titles {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.title {
+  font-size: 6rem;
+  font-weight: 500;
+  letter-spacing: -4px;
+}
+
+.highlight {
+  background: var(--gradient-purple-1);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: Georgia;
+  font-style: italic;
+  padding-right: 1rem;
+}
+
+.newline {
+  display: block;
+}
+
+.shortline {
+  line-height: 80%;
+}
+
+.subtitle {
+  font-size: 1.4rem;
+  font-weight: 300;
+  letter-spacing: -1px;
+}
