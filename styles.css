@@ -2,19 +2,14 @@
   --purple10: #e9deff;
   --purple35: rgba(162, 45, 247, 0.5);
 
-  --gradient-purple-1: linear-gradient(45deg, #8338ec, #b923ff);
-  /* --gradient-purple-2: linear-gradient(
-    90deg,
-    rgba(233, 222, 255, 0) 0%,
-    rgba(233, 222, 255, 0.3) 100%
-  ); */
-
   --dark04: rgba(23, 0, 52, 0.4);
   --dark10: #56514d;
   --dark20: #1e0044;
   --dark30: #0b001a;
 
   --white10: #ffffff;
+
+  --gradient-purple-1: linear-gradient(45deg, #8338ec, #b923ff);
 }
 
 @font-face {
