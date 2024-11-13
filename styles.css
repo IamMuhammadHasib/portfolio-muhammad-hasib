@@ -1,6 +1,7 @@
 :root {
   --purple10: #e9deff;
   --purple35: rgba(162, 45, 247, 0.5);
+  --purple50: #ad9aca;
 
   --dark04: rgba(23, 0, 52, 0.4);
   --dark10: #56514d;
@@ -39,7 +40,7 @@ a {
 .main {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 2rem;
 }
 
 .section {
@@ -50,7 +51,7 @@ a {
 .home {
   background-color: var(--dark20);
   display: flex;
-  gap: 6rem;
+  gap: 5rem;
   flex-direction: column;
   padding-top: 1rem;
   color: var(--purple10);
@@ -60,7 +61,8 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 0.88rem;
+  font-size: 14px;
+  font-weight: 500;
 }
 
 .navbar-links {
@@ -74,6 +76,7 @@ a {
   flex-direction: column;
   font-family: Georgia;
   font-style: italic;
+  font-weight: 400;
   font-size: 1.4rem;
 }
 
@@ -81,8 +84,8 @@ a {
   color: var(--purple10);
 }
 
-.brand img{
-    margin-top: -3px;
+.brand img {
+  margin-top: -3px;
 }
 
 .nav-link {
@@ -117,7 +120,7 @@ a {
 }
 
 .title {
-  font-size: 6rem;
+  font-size: 100px;
   font-weight: 500;
   letter-spacing: -4px;
 }
@@ -141,7 +144,27 @@ a {
 }
 
 .subtitle {
-  font-size: 1.4rem;
+  font-size: 24px;
   font-weight: 300;
   letter-spacing: -1px;
+}
+
+.status {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.status-text {
+  font-size: 14px;
+}
+
+.status-img {
+  color: var(--purple50);
+}
+
+/* ========== About Section =========== */
+
+.about {
+  background-color: var(--purple10);
 }
