@@ -267,22 +267,40 @@ a {
   gap: 1rem;
 }
 
-#project1 {
+.project-odd {
   position: relative;
   background-color: var(--purple10);
   background-image: url("./assets/wavy-circle-m-purple60.svg"),
     url("./assets/wavy-circle-l-purple60.svg");
   /* background-blend-mode: overlay; */
   /* background-position-x: 5%, 10%; */
-  background-position: 65% -60%, -50% -150%;
+  background-position: 65% -60%, -50% -130%;
   background-repeat: no-repeat no-repeat;
   /* background-size: contain; */
   color: var(--dark30);
   /* overflow: hidden; */
 }
 
-.project a {
+.project-even {
+  position: relative;
+  background-color: var(--dark20);
+  background-image: url("./assets/wavy-circle-m-purple70.svg"),
+    url("./assets/wavy-circle-l-purple70.svg");
+  /* background-blend-mode: overlay; */
+  /* background-position-x: 5%, 10%; */
+  background-position: 65% 160%, -50% 230%;
+  background-repeat: no-repeat no-repeat;
+  /* background-size: contain; */
+  color: var(--purple10);
+  /* overflow: hidden; */
+}
+
+.project-odd a {
   color: var(--dark30);
+}
+
+.project-even a {
+  color: var(--purple10);
 }
 
 .project-content {
@@ -313,8 +331,12 @@ a {
   width: 75%;
 }
 
-.project-button {
+.project-odd-button {
   background: var(--purple10);
+}
+
+.project-even-button {
+  background: var(--dark20);
 }
 
 .project-img {
