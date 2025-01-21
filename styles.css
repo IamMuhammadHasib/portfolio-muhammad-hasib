@@ -97,6 +97,7 @@ body {
 
 a {
   text-decoration: none;
+  cursor: pointer;
 }
 
 .main {
@@ -405,4 +406,26 @@ td {
 
 #contact-title {
   text-align: center;
+}
+
+
+/* ========= Hidden Notification ========== */
+.hidden-notification {
+  position: fixed;
+  bottom: 50px;
+  background-color: var(--purple40);
+  color: var(--purple10);
+  padding: 5px 12px;
+  border-radius: 12px;
+  font-size: 14px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  z-index: 1000;
+}
+
+/* Visible state for the notification */
+.show-notification {
+  opacity: 1;
+  visibility: visible;
 }
